@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@400;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <title>Fakebook</title>
+</head>
+
+<body>
+  <header class="top-bar">
+    <img class="facebook-logo" src="imgs/facebook-logo.png" alt="Logo do facebook">
+
+    <form class="facebook-login" action="">
+      <div class="form-group" action="">
+        <label id="user-email-phone-label" for="user-email-phone">Email ou telefone</label>
+        <input id="user-email-phone" type="text" data-validate-field="name" name="name" autocomplete="off">
+      </div>
+
+      <div class="form-group user-password">
+        <label id="user-password-label" for="user-password">Senha</label>
+        <input id="user-password" type="password" data-validate-field="user-password" name="user-password" autocomplete="off">
+        <a class="forgotPassword" href="">Esqueceu a senha?</a>
+      </div>
+
+      <div class="form-control">
+        <button id="button-login" class="button-login" type="submit">Entrar</button>
+      </div>
+    </form>
+  </header>
+
+  <main class="main-content">
+    <section class="left-content">
+      <p id="facebook-slogan" class="facebook-slogan">
+        O Fakebook ajuda você a se conectar e compartilhar com as pessoas que fazem parte da sua vida.
+      </p>
+      <img id="facebook-networking" class="facebook-networking" src="imgs/networking.png" alt="">
+    </section>
+
+    <section class="right-content">
+      <h1>Abra uma conta</h1>
+
+      <div class="quick-easy">É rápido e fácil.</div>
+
+      <form action="" id="register-form" class="register-form">
+        <div class="complete-name">
+          <div class="input-field">
+            <input id="firstname" class="firstname" type="text" name="firstname" autocomplete="off" required>
+            <label for="firstname">Nome</label>
+            <span class="error"></span>
+          </div>
+          <div class="input-field">
+            <input id="lastname" class="lastname" type="text" name="lastname" autocomplete="off" required>
+            <label for="lastname">Sobrenome</label>
+            <span class="error"></span>
+          </div>
+        </div>
+        <div class="input-field">
+          <input id="phone_email" class="phone_email" type="text" name="phone_email" autocomplete="off" required>
+          <label for="phone_email">Celular ou email</label>
+          <span class="error"></span>
+        </div>
+        <div class="input-field">
+          <input id="password" class="password" type="password" name="password" autocomplete="off" required>
+          <label for="password">Nova senha</label>
+          <span class="error"></span>
+        </div>
+
+        <div id="birthdate-content">
+          <div class="input-field date-field">
+            <input id="birthday" class="birthday" type="text" name="birthday" autocomplete="off" required>
+            <label for="birthday">Dia</label>
+            <span class="error"></span>
+          </div>
+
+          <div class="input-field date-field">
+            <input id="birth-month" class="birth-month" type="text" name="birth-month" autocomplete="off" required>
+            <label for="birth-month">Mês</label>
+            <span class="error"></span>
+          </div>
+
+          <div class="input-field date-field>
+            <input id="birth-year" class="birth-year" type="text" name="birth-year" autocomplete="off" required>
+            <label for="birth-year">Ano</label>
+            <span class="error"></span>
+          </div>
+        </div>
+
+        <label for="" id="label-gender" class="label-gender">Gênero</label>
+        <div class="radios">
+          <div class="radio-male">
+            <input type="radio" name="gender" id="female" value="Feminino">
+            <label for="female">Feminino</label>
+          </div>
+          <div class="radio-female">
+            <input type="radio" name="gender" id="male" value="Masculino">
+            <label for="male">Masculino</label>
+          </div>
+          <div class="radio-custom">
+            <input type="radio" name="gender" id="custom" value="Personalizado">
+            <label for="custom">Personalizado</label>
+          </div>
+        </div>
+      </form>
+
+      <div class="input-field hide" style="display: none">
+        <input id="gender-custom" class="gender-custom" type="text" name="gender-custom" autocomplete="off">
+        <label for="gender-custom">Gênero (opcional)</label>
+        <span class="error" style="display: none">(Opcional)</span>
+      </div>
+
+      <div class="warning">
+        <p>Ao clicar em cadastre-se, você concorda com nossos<a href="#">Termos</a>, <a href="#">Política de Dados</a> e <a href="#">Políticas de Cookies</a>. Você pode receber notificações por SMS e pode cancelar isso quando quiser.</p>
+      </div>
+
+      <button type="submit" id="facebook-register" class="facebook-register">Cadastre-se</button>
+
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

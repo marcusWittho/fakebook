@@ -1,0 +1,290 @@
+body {
+  background-image: linear-gradient(to bottom, rgb(250, 253, 255), rgb(220, 231, 255));
+  box-sizing: border-box;
+  font-family: Catamaran, sans-serif;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --var-blueface: rgb(59, 89, 152);
+}
+
+.invalid-field {
+  border-color: red;
+  box-shadow: 0 0 4px rgba(255, 0, 0, 0.7);
+}
+
+.top-bar {
+  align-items: center;
+  background-color: rgb(66, 103, 178);
+  background-image: linear-gradient(to bottom, rgb(63, 114, 224), var(--var-blueface));
+  color: aliceblue;
+  display: flex;
+  font-weight: 700;
+  height: 10vh;
+  justify-content: space-evenly;
+  width: 100vw;
+}
+
+.facebook-logo {
+  width: 16rem;
+  height: 2.8rem
+}
+
+.facebook-login {
+  display: flex;
+}
+
+.facebook-login input {
+  padding: 4px;
+  outline: none;
+}
+
+.button-login {
+  margin-bottom: 26px;
+  padding: 6px 12px;
+  font-weight: 600;
+  color: white;
+  border: 1px solid var(--var-blueface);
+  background-image: linear-gradient(to bottom, rgb(77, 152, 236), rgb(61, 124, 197));
+  text-shadow: 1px 1px rgba(0, 0, 0, 0.7);
+  border-radius: 5px;
+  outline: none;
+}
+
+.button-login:hover {
+  background-image: linear-gradient(to bottom, rgb(91, 162, 243), rgb(79, 122, 216));
+}
+
+.button-login:active {
+  background-image: linear-gradient(to bottom, rgb(73, 133, 201), rgb(60, 94, 168));
+}
+
+.forgotPassword {
+  font-weight: 200;
+  color: rgba(228, 228, 228, 0.7);
+}
+
+.main-content {
+  height: 100vh;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.facebook-slogan {
+  font-size: 2.3rem;
+  font-weight: 700;
+  line-height: 37px;
+  color: var(--var-blueface);
+}
+
+.facebook-networking {
+  width: 40rem;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-control {
+  align-self: flex-end;
+  padding: 0 15px;
+}
+
+.user-password {
+  margin-left: 15px;
+  text-decoration: none;
+}
+
+.user-password a {
+  text-decoration: none;
+}
+
+.left-content {
+  width: 800px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right-content {
+  width: 370px;
+}
+
+.right-content h1 {
+  color: rgb(39, 39, 39);
+  font-size: 2.3rem;
+  margin-bottom: 0;
+  line-height: 35px;
+}
+
+.quick-easy {
+  font-size: 1.4rem;
+  margin-bottom: 25px;
+}
+
+div.input-field {
+  position: relative;
+}
+
+.complete-name {
+  display: flex;
+}
+
+.input-field .firstname, .input-field .lastname {
+  width: 9.6rem;
+  padding-left: 0.4rem;
+}
+
+.input-field .phone_email, .input-field .password {
+  width: 20.7rem;
+  padding-left: 0.4rem;
+}
+
+#birthdate-content input {
+  width: 5rem;
+  padding-left: 0.4rem;
+}
+
+.complete-name div + div {
+  margin-left: 12px;
+}
+
+.input-field input, .gender-custom {
+  outline: none;
+  padding: 5px;
+  width: 21.5rem;
+  height: 2.2rem;
+  font-size: 16px;
+  background: transparent;
+  background-image: linear-gradient(to top,  rgba(59, 107, 152, 0.1), transparent);
+  border: none;
+  border-bottom: 2px solid var(--var-blueface);
+  padding: 3px 3px 0 0;
+  margin-top: 25px;
+}
+
+.input-field label {
+  position: absolute;
+  top: 30px;
+  left: 7px;
+  color: rgba(59, 107, 152, 0.8);
+  transition: 300ms;
+}
+
+input:focus ~ label, input:valid ~ label {
+  transform: translateY(-23px);
+  font-size: 0.8rem;
+  letter-spacing: 0.1rem;
+}
+
+.input-field span.error {
+  display: flex;
+  margin: 4px 0 0 7px;
+  font-size: 13px;
+  color: rgba(255, 0, 0, 1);
+  line-height: 12px;
+  font-style: italic;
+  transition: all 400ms ease;
+  background-image: linear-gradient(to right, rgba(255, 190, 190, 0.4), transparent);
+}
+
+#birthdate-content {
+  display: flex;
+}
+
+#birthdate-content div + div {
+  margin-left: 1rem;
+}
+
+.label-gender {
+  display: block;
+  margin-top: 30px;
+  font-weight: 600;
+  color: rgb(65, 65, 65);
+}
+
+.radios {
+  margin: 0 0 10px 0;
+  display: flex;
+}
+
+.radios label {
+  font-size: 13px;
+  font-weight: 600;
+  color: rgb(65, 65, 65);
+}
+
+.radios div + div {
+  margin-left: 13px;
+}
+
+.warning {
+  width: 19.5rem;
+}
+
+.warning p {
+  margin: 20px 0;
+  font-size: 0.8rem;
+}
+
+.warning p a {
+  color: var(--var-blueface);
+  text-decoration: none;
+}
+
+.warning p a:hover {
+  color: rgb(0, 141, 235);
+}
+
+.facebook-register {
+  outline: none;
+  margin-top: 10px;
+  padding: 7px 35px;
+  border-radius: 5px;
+  color: rgb(255, 255, 255);
+  font-size: 17px;
+  font-weight: 600;
+  border: 1px solid black;
+  background-image: linear-gradient(to bottom, rgb(0, 231, 96), rgb(0, 155, 64));
+  text-shadow: 1px 0px rgba(0, 0, 0, 0.7);
+  box-shadow: inset 0.5px 1.7px rgba(255, 255, 255, 1);
+}
+
+.facebook-register:hover {
+  background-image: linear-gradient(to bottom, rgb(0, 241, 101), rgb(0, 165, 74));
+}
+
+.facebook-register:active {
+  background-image: linear-gradient(to bottom, rgb(0, 221, 81), rgb(0, 145, 54));
+}
+
+.wellcome {
+  display: flex;
+  justify-content: center;
+}
+
+.box-wellcome {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 9rem;
+}
+
+.box-wellcome .greeting, .full-name, .ask {
+  margin: 0.5rem 0;
+  line-height: 4.2rem;
+  font-size: 5rem;
+  font-weight: 600;
+  color: var(--var-blueface);
+}
+
+.box-wellcome .full-name {
+  font-size: 3rem;
+}
+
+.box-wellcome .ask {
+  font-size: 1.6rem;
+}
